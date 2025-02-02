@@ -37,9 +37,10 @@ export const Header = () => {
             <button>Join</button>
           </div>
         </div>
-        <hr />
+    
         {active && (
           <>
+          <hr />
             <div className="menu">
               <span>test</span>
               <span>test2</span>

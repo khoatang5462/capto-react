@@ -22,10 +22,10 @@ export const HomePage = () => {
       <CatCard />
       <div className="features">
         <div className="container">
-          <div className="item">
+          <div className="item ">
             <h1>A whole world of freelance talent at your fingertips</h1>
             <div className="title">
-              <img src="./image/check.png" alt="" />
+              <img src="./image/check.svg" alt="" />
               The best for every budget
             </div>
             <p>
@@ -33,7 +33,7 @@ export const HomePage = () => {
               just project-based pricing.
             </p>
             <div className="title">
-              <img src="./image/check.png" alt="" />
+              <img src="./image/check.svg" alt="" />
               Quality work done quickly
             </div>
             <p>
@@ -41,7 +41,7 @@ export const HomePage = () => {
               minutes.
             </p>
             <div className="title">
-              <img src="./image/check.png" alt="" />
+              <img src="./image/check.svg" alt="" />
               Protected payments, every time
             </div>
             <p>
@@ -49,7 +49,7 @@ export const HomePage = () => {
               until you approve the work.
             </p>
             <div className="title">
-              <img src="./image/check.png" alt="" />
+              <img src="./image/check.svg" alt="" />
               24/7 support
             </div>
             <p>
@@ -57,12 +57,18 @@ export const HomePage = () => {
               just project-based pricing.
             </p>
           </div>
-          <div className="item">
-            <video src=""  controls onClick={handleVideoClick} />
+          <div className="item relative ">
+            <img src="https://i.pinimg.com/736x/09/ca/35/09ca3548f90bba0ea65fdf854689e7b8.jpg" />
+            <button
+              onClick={handleVideoClick}
+              className=" cursor-pointer text-7xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+
+              <i className="fa-solid fa-circle-play"></i>
+            </button>
           </div>
         </div>
       </div>
-      {showVideoOverlay && (  
+      {showVideoOverlay && (
         <div className="overlay" onClick={closeVideoOverlay}>
           <div className="video">
             <video src="./image/video.mp4" controls autoPlay />
@@ -73,7 +79,8 @@ export const HomePage = () => {
         <div className="container">
           <h1>Explore the marketplace</h1>
           <div className="items">
-            {/* ... existing code ... */}
+
+
           </div>
         </div>
       </div>

@@ -14,8 +14,8 @@ export const CatCard = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToShow: 5,
+    slidesToScroll: 4,
     autoplay: true,
     autoplaySpeed: 3000,
   };
@@ -45,8 +45,8 @@ export const CatCard = () => {
         ))}
       </Slider>
       <div>
-        <button className=' absolute top-1/2 left-24 ' onClick={() => sliderRef.current.slickPrev()}> <i className="fa-solid fa-circle-chevron-left text-3xl"></i>  </button>
-        <button className=' absolute top-1/2 right-24' onClick={() => sliderRef.current.slickNext()}> <i className="fa-solid fa-circle-chevron-right text-3xl"></i> </button>
+        <button className=' absolute top-1/2 left-10 ' onClick={() => sliderRef.current.slickPrev()}> <i className="fa-solid fa-circle-chevron-left text-3xl"></i>  </button>
+        <button className=' absolute top-1/2 right-10' onClick={() => sliderRef.current.slickNext()}> <i className="fa-solid fa-circle-chevron-right text-3xl"></i> </button>
 
       </div>
     </div>
