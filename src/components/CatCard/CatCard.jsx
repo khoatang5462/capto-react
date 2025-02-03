@@ -8,8 +8,7 @@ import 'slick-carousel/slick/slick-theme.css';
 export const CatCard = () => {
   const url = 'https://679eff4e946b0e23c06475b7.mockapi.io/cards';
   const [slides, setSlides] = useState([]);
-  const sliderRef = useRef(null); // Tham chiếu đến slider
-
+  const sliderRef = useRef(null); 
   const settings = {
     dots: false,
     infinite: true,

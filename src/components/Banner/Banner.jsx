@@ -42,7 +42,7 @@ export const Banner = () => {
         }}
         
       /> */}
-            <div className='h-[95vh]' style={{ backgroundImage: `url(${slide.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+            <div className='h-[100vh]' style={{ backgroundImage: `url(${slide.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
           </div>
         ))}
       </Slider>
