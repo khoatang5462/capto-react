@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react"; // Thêm useRef
+import React, { useEffect, useState, useRef } from "react"; 
 import axios from "axios";
 import "./Testmonial.scss";
 import Slider from "react-slick";
@@ -62,16 +62,23 @@ export const Testimonial = () => {
                                 <i className="review">"{item.testimonial}"</i>
                             </div>
                         </div>
-                        {showVideoOverlay === item.id && (
-                            <div className="overlay" onClick={closeVideoOverlay}>
-                                <div className="video">
-                                    <video src={item.videoUrl} controls autoPlay />
-                                </div>
-                            </div>
-                        )}
                     </div>
                 ))}
             </Slider>
+
+            {/* Video Overlay */}
+            {showVideoOverlay !== null && (
+                <div className="overlay" onClick={closeVideoOverlay}>
+                    <div className="video">
+                        {testimonial.map(item => (
+                            item.id === showVideoOverlay && item.videoUrl && (
+                                <video key={item.id} src={item.videoUrl} controls autoPlay />
+                            )
+                        ))}
+                    </div>
+                </div>
+            )}
+
             <div>
                 <button className='absolute top-1/2 left-10' onClick={() => sliderRef.current.slickPrev()}>
                     <i className="fa-solid fa-circle-chevron-left text-3xl"></i>
